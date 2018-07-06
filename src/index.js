@@ -3,6 +3,7 @@ import bindRoutineToReduxForm from './bindRoutineToReduxForm';
 import createRoutine from './createRoutine';
 import promisifyRoutine from './promisifyRoutine';
 import bindPromiseCreators from './bindPromiseCreators';
+import withTracking from './withTracking';
 import { ROUTINE_PROMISE_ACTION } from './constants';
 
 export {
@@ -11,5 +12,6 @@ export {
   createRoutine,
   promisifyRoutine,
   bindPromiseCreators,
+  withTracking,
   ROUTINE_PROMISE_ACTION,
 };
