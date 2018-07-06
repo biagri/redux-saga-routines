@@ -1,6 +1,6 @@
 .idea
-dist
-es
+# dist
+# es
 .DS_Store
 Thumbs.db
 

@@ -17,6 +17,7 @@ describe('promisifyRoutine', () => {
     const payload = {
       some: 'data',
     };
+    const options = {};
 
     expect(handler(payload, dispatch)).to.be.a('promise');
     expect(dispatch.calledOnce).to.equal(true);
@@ -40,5 +41,8 @@ describe('promisifyRoutine', () => {
 
     expect(action.meta).to.have.property('routine');
     expect(action.meta.routine).to.equal(routine);
+
+    expect(action.meta).to.have.property('options');
+    expect(action.meta.options).to.deep.equal(options);
   });
 });
